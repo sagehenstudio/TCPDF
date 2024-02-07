@@ -7760,7 +7760,7 @@ class TCPDF {
 					'filename*=UTF-8\'\'' . rawurlencode(basename($name)));
 				header('Content-Transfer-Encoding: binary');
 				TCPDF_STATIC::sendOutputData($this->getBuffer(), $this->bufferlen);
-				break;
+				exit();
 			}
 			case 'F':
 			case 'FI':
